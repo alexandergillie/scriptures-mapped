@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69B20F5D84518301EE67DB28 /* Pods_Project_3_Gillie_AlexanderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268E1CF6A045BC8E1B657024 /* Pods_Project_3_Gillie_AlexanderTests.framework */; };
 		6ACD784421A60CEE00F54C7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD784321A60CEE00F54C7F /* AppDelegate.swift */; };
 		6ACD784921A60CEE00F54C7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD784721A60CEE00F54C7F /* Main.storyboard */; };
 		6ACD784B21A60CF000F54C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD784A21A60CF000F54C7F /* Assets.xcassets */; };
@@ -14,6 +15,17 @@
 		6ACD785921A60CF000F54C7F /* Project_3_Gillie_AlexanderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD785821A60CF000F54C7F /* Project_3_Gillie_AlexanderTests.swift */; };
 		6ACD786421A60CF000F54C7F /* Project_3_Gillie_AlexanderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD786321A60CF000F54C7F /* Project_3_Gillie_AlexanderUITests.swift */; };
 		6ACD787A21A6115800F54C7F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD787921A6115800F54C7F /* Default-568h@2x.png */; };
+		6ACD788421A61A3900F54C7F /* GeoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD787B21A61A3900F54C7F /* GeoDatabase.swift */; };
+		6ACD788521A61A3900F54C7F /* scripture.css in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD787C21A61A3900F54C7F /* scripture.css */; };
+		6ACD788621A61A3900F54C7F /* Scripture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD787D21A61A3900F54C7F /* Scripture.swift */; };
+		6ACD788721A61A3900F54C7F /* geocode.js in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD787E21A61A3900F54C7F /* geocode.js */; };
+		6ACD788821A61A3900F54C7F /* GeoPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD787F21A61A3900F54C7F /* GeoPlace.swift */; };
+		6ACD788921A61A3900F54C7F /* ScriptureRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD788021A61A3900F54C7F /* ScriptureRenderer.swift */; };
+		6ACD788A21A61A3900F54C7F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD788121A61A3900F54C7F /* Book.swift */; };
+		6ACD788B21A61A3900F54C7F /* geo.21.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 6ACD788221A61A3900F54C7F /* geo.21.sqlite */; };
+		6ACD788C21A61A3900F54C7F /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACD788321A61A3900F54C7F /* String+Extensions.swift */; };
+		741F35F8249F9C25973EA3CD /* Pods_Project_3_Gillie_AlexanderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17C171F88CF5129A6F97FDF3 /* Pods_Project_3_Gillie_AlexanderUITests.framework */; };
+		AD2023C78D5F18D439C4B9E3 /* Pods_Project_3_Gillie_Alexander.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6596981B4A9013EB165DC7 /* Pods_Project_3_Gillie_Alexander.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		069205C751236FC8BC8A71F8 /* Pods-Project 3 Gillie AlexanderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 3 Gillie AlexanderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 3 Gillie AlexanderUITests/Pods-Project 3 Gillie AlexanderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		17C171F88CF5129A6F97FDF3 /* Pods_Project_3_Gillie_AlexanderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_3_Gillie_AlexanderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		268E1CF6A045BC8E1B657024 /* Pods_Project_3_Gillie_AlexanderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_3_Gillie_AlexanderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D01B5971C0994A6DD9635F6 /* Pods-Project 3 Gillie Alexander.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 3 Gillie Alexander.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 3 Gillie Alexander/Pods-Project 3 Gillie Alexander.debug.xcconfig"; sourceTree = "<group>"; };
+		538EC4B7786A4A41DCC0B662 /* Pods-Project 3 Gillie AlexanderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 3 Gillie AlexanderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 3 Gillie AlexanderTests/Pods-Project 3 Gillie AlexanderTests.release.xcconfig"; sourceTree = "<group>"; };
 		6ACD784021A60CEE00F54C7F /* Project 3 Gillie Alexander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 3 Gillie Alexander.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACD784321A60CEE00F54C7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ACD784821A60CEE00F54C7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,6 +64,19 @@
 		6ACD786321A60CF000F54C7F /* Project_3_Gillie_AlexanderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_3_Gillie_AlexanderUITests.swift; sourceTree = "<group>"; };
 		6ACD786521A60CF000F54C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ACD787921A6115800F54C7F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6ACD787B21A61A3900F54C7F /* GeoDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoDatabase.swift; sourceTree = "<group>"; };
+		6ACD787C21A61A3900F54C7F /* scripture.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = scripture.css; sourceTree = "<group>"; };
+		6ACD787D21A61A3900F54C7F /* Scripture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scripture.swift; sourceTree = "<group>"; };
+		6ACD787E21A61A3900F54C7F /* geocode.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = geocode.js; sourceTree = "<group>"; };
+		6ACD787F21A61A3900F54C7F /* GeoPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoPlace.swift; sourceTree = "<group>"; };
+		6ACD788021A61A3900F54C7F /* ScriptureRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScriptureRenderer.swift; sourceTree = "<group>"; };
+		6ACD788121A61A3900F54C7F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		6ACD788221A61A3900F54C7F /* geo.21.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = geo.21.sqlite; sourceTree = "<group>"; };
+		6ACD788321A61A3900F54C7F /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		815597300FA3F68A0F2EA696 /* Pods-Project 3 Gillie AlexanderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 3 Gillie AlexanderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 3 Gillie AlexanderUITests/Pods-Project 3 Gillie AlexanderUITests.release.xcconfig"; sourceTree = "<group>"; };
+		844EE6916E3C80064CE7B695 /* Pods-Project 3 Gillie Alexander.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 3 Gillie Alexander.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 3 Gillie Alexander/Pods-Project 3 Gillie Alexander.release.xcconfig"; sourceTree = "<group>"; };
+		8B6AC65FCA8FCA6C2E8FEF61 /* Pods-Project 3 Gillie AlexanderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 3 Gillie AlexanderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 3 Gillie AlexanderTests/Pods-Project 3 Gillie AlexanderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB6596981B4A9013EB165DC7 /* Pods_Project_3_Gillie_Alexander.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_3_Gillie_Alexander.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2023C78D5F18D439C4B9E3 /* Pods_Project_3_Gillie_Alexander.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B20F5D84518301EE67DB28 /* Pods_Project_3_Gillie_AlexanderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +100,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741F35F8249F9C25973EA3CD /* Pods_Project_3_Gillie_AlexanderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66B087FF55A743D7296AB905 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D01B5971C0994A6DD9635F6 /* Pods-Project 3 Gillie Alexander.debug.xcconfig */,
+				844EE6916E3C80064CE7B695 /* Pods-Project 3 Gillie Alexander.release.xcconfig */,
+				8B6AC65FCA8FCA6C2E8FEF61 /* Pods-Project 3 Gillie AlexanderTests.debug.xcconfig */,
+				538EC4B7786A4A41DCC0B662 /* Pods-Project 3 Gillie AlexanderTests.release.xcconfig */,
+				069205C751236FC8BC8A71F8 /* Pods-Project 3 Gillie AlexanderUITests.debug.xcconfig */,
+				815597300FA3F68A0F2EA696 /* Pods-Project 3 Gillie AlexanderUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6ACD783721A60CEE00F54C7F = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +128,8 @@
 				6ACD785721A60CF000F54C7F /* Project 3 Gillie AlexanderTests */,
 				6ACD786221A60CF000F54C7F /* Project 3 Gillie AlexanderUITests */,
 				6ACD784121A60CEE00F54C7F /* Products */,
+				66B087FF55A743D7296AB905 /* Pods */,
+				985CBECB9C55914072D99F69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +175,7 @@
 		6ACD787421A6105B00F54C7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6ACD788D21A61A5F00F54C7F /* HTML */,
 				6ACD784721A60CEE00F54C7F /* Main.storyboard */,
 				6ACD784C21A60CF000F54C7F /* LaunchScreen.storyboard */,
 			);
@@ -144,6 +193,10 @@
 		6ACD787721A6107A00F54C7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6ACD787D21A61A3900F54C7F /* Scripture.swift */,
+				6ACD787B21A61A3900F54C7F /* GeoDatabase.swift */,
+				6ACD787F21A61A3900F54C7F /* GeoPlace.swift */,
+				6ACD788121A61A3900F54C7F /* Book.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -152,10 +205,32 @@
 		6ACD787821A6108800F54C7F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6ACD788321A61A3900F54C7F /* String+Extensions.swift */,
+				6ACD788221A61A3900F54C7F /* geo.21.sqlite */,
 				6ACD784A21A60CF000F54C7F /* Assets.xcassets */,
 				6ACD784F21A60CF000F54C7F /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6ACD788D21A61A5F00F54C7F /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				6ACD787E21A61A3900F54C7F /* geocode.js */,
+				6ACD787C21A61A3900F54C7F /* scripture.css */,
+				6ACD788021A61A3900F54C7F /* ScriptureRenderer.swift */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		985CBECB9C55914072D99F69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB6596981B4A9013EB165DC7 /* Pods_Project_3_Gillie_Alexander.framework */,
+				268E1CF6A045BC8E1B657024 /* Pods_Project_3_Gillie_AlexanderTests.framework */,
+				17C171F88CF5129A6F97FDF3 /* Pods_Project_3_Gillie_AlexanderUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ACD786821A60CF000F54C7F /* Build configuration list for PBXNativeTarget "Project 3 Gillie Alexander" */;
 			buildPhases = (
+				A601D36C11E249759DC01139 /* [CP] Check Pods Manifest.lock */,
 				6ACD783C21A60CEE00F54C7F /* Sources */,
 				6ACD783D21A60CEE00F54C7F /* Frameworks */,
 				6ACD783E21A60CEE00F54C7F /* Resources */,
+				EEDD1F6ED46B1C30D1CE55E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -182,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ACD786B21A60CF000F54C7F /* Build configuration list for PBXNativeTarget "Project 3 Gillie AlexanderTests" */;
 			buildPhases = (
+				67BEEC0AA528CCE0DB163CAD /* [CP] Check Pods Manifest.lock */,
 				6ACD785021A60CF000F54C7F /* Sources */,
 				6ACD785121A60CF000F54C7F /* Frameworks */,
 				6ACD785221A60CF000F54C7F /* Resources */,
@@ -200,6 +278,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6ACD786E21A60CF000F54C7F /* Build configuration list for PBXNativeTarget "Project 3 Gillie AlexanderUITests" */;
 			buildPhases = (
+				B4535E9C63EDCFEF0CA274F1 /* [CP] Check Pods Manifest.lock */,
 				6ACD785B21A60CF000F54C7F /* Sources */,
 				6ACD785C21A60CF000F54C7F /* Frameworks */,
 				6ACD785D21A60CF000F54C7F /* Resources */,
@@ -263,9 +342,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACD784E21A60CF000F54C7F /* LaunchScreen.storyboard in Resources */,
+				6ACD788721A61A3900F54C7F /* geocode.js in Resources */,
 				6ACD787A21A6115800F54C7F /* Default-568h@2x.png in Resources */,
 				6ACD784B21A60CF000F54C7F /* Assets.xcassets in Resources */,
+				6ACD788B21A61A3900F54C7F /* geo.21.sqlite in Resources */,
 				6ACD784921A60CEE00F54C7F /* Main.storyboard in Resources */,
+				6ACD788521A61A3900F54C7F /* scripture.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +367,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67BEEC0AA528CCE0DB163CAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project 3 Gillie AlexanderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A601D36C11E249759DC01139 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project 3 Gillie Alexander-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4535E9C63EDCFEF0CA274F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project 3 Gillie AlexanderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEDD1F6ED46B1C30D1CE55E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Project 3 Gillie Alexander/Pods-Project 3 Gillie Alexander-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GRDB.swift/GRDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project 3 Gillie Alexander/Pods-Project 3 Gillie Alexander-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6ACD783C21A60CEE00F54C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACD788421A61A3900F54C7F /* GeoDatabase.swift in Sources */,
+				6ACD788C21A61A3900F54C7F /* String+Extensions.swift in Sources */,
+				6ACD788921A61A3900F54C7F /* ScriptureRenderer.swift in Sources */,
+				6ACD788A21A61A3900F54C7F /* Book.swift in Sources */,
+				6ACD788821A61A3900F54C7F /* GeoPlace.swift in Sources */,
 				6ACD784421A60CEE00F54C7F /* AppDelegate.swift in Sources */,
+				6ACD788621A61A3900F54C7F /* Scripture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +642,7 @@
 		};
 		6ACD786921A60CF000F54C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D01B5971C0994A6DD9635F6 /* Pods-Project 3 Gillie Alexander.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +661,7 @@
 		};
 		6ACD786A21A60CF000F54C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844EE6916E3C80064CE7B695 /* Pods-Project 3 Gillie Alexander.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +680,7 @@
 		};
 		6ACD786C21A60CF000F54C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6AC65FCA8FCA6C2E8FEF61 /* Pods-Project 3 Gillie AlexanderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +702,7 @@
 		};
 		6ACD786D21A60CF000F54C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 538EC4B7786A4A41DCC0B662 /* Pods-Project 3 Gillie AlexanderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,6 +724,7 @@
 		};
 		6ACD786F21A60CF000F54C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069205C751236FC8BC8A71F8 /* Pods-Project 3 Gillie AlexanderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -561,6 +745,7 @@
 		};
 		6ACD787021A60CF000F54C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815597300FA3F68A0F2EA696 /* Pods-Project 3 Gillie AlexanderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
