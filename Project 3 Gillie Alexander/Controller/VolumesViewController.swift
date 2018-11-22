@@ -16,17 +16,39 @@ class VolumesViewController : UITableViewController {
         static let VolumeCellIdentifier = "VolumeCell"
     }
     
-    var model = GeoDatabase.sharedGeoDatabase.volumes()
+    var volumes = GeoDatabase.sharedGeoDatabase.volumes()
+    
+    // Segues
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Storyboard.ShowBooksSegueIdentifier {
+            if let booksVC = segue.destination as? BooksViewController {
+                if let indexPath = sender as? IndexPath {
+                    booksVC.volume = volumes[indexPath.row]
+                    booksVC.volumeID = indexPath.row + 1
+                }
+            }
+        }
+    }
+    
+    
+    // Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.count
+        return volumes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.VolumeCellIdentifier, for: indexPath)
         
         
-        cell.textLabel?.text = model[indexPath.row ]
+        cell.textLabel?.text = volumes[indexPath.row ]
         return cell
+    }
+    
+    // Table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Storyboard.ShowBooksSegueIdentifier, sender: indexPath)
     }
 }

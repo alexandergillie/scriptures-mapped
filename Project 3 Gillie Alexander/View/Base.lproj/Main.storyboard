@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eee-kO-HNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="6"/>
+            <point key="canvasLocation" x="246" y="267"/>
         </scene>
         <!--The Scriptures-->
         <scene sceneID="XKI-qe-SiX">
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="1141" y="-659"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Books View Controller-->
         <scene sceneID="9Dn-Wi-zGt">
             <objects>
-                <tableViewController id="UG0-bO-cZD" sceneMemberID="viewController">
+                <tableViewController id="UG0-bO-cZD" customClass="BooksViewController" customModule="Project_3_Gillie_Alexander" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="O6V-ra-4Ew">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,10 +91,63 @@
                             <outlet property="delegate" destination="UG0-bO-cZD" id="inh-IA-40Q"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="sv2-xg-mUM" kind="show" identifier="ShowChapterList" id="7t7-BV-R12"/>
+                        <segue destination="UY8-hF-bZu" kind="show" identifier="ShowChapterContent" id="c21-Ki-MJC"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ART-Jh-1W8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2049" y="-660"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="QJV-nw-fPO">
+            <objects>
+                <tableViewController id="sv2-xg-mUM" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZpV-3S-FIf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ED9-Ms-dgj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ED9-Ms-dgj" id="Qkq-s1-6UH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sv2-xg-mUM" id="EF0-x2-6aV"/>
+                            <outlet property="delegate" destination="sv2-xg-mUM" id="LsL-Tv-KOf"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="UY8-hF-bZu" kind="show" identifier="ShowChapterContent" id="EQd-8D-nPN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CNi-uI-5es" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3047" y="-661"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hn5-jC-sx8">
+            <objects>
+                <viewController id="UY8-hF-bZu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gRs-dC-zBu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zSt-qB-Vp3"/>
+                    </view>
+                    <connections>
+                        <segue destination="7Tf-HL-HNH" kind="showDetail" identifier="ShowMap" id="jBe-2t-Suc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZj-24-avO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2591" y="267"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XzQ-hn-47B">
@@ -126,4 +179,8 @@
             <point key="canvasLocation" x="-763" y="-326"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="c21-Ki-MJC"/>
+        <segue reference="jBe-2t-Suc"/>
+    </inferredMetricsTieBreakers>
 </document>
