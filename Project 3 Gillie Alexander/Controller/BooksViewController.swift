@@ -14,23 +14,26 @@ class BooksViewController : UITableViewController {
     private struct Storyboard {
         static let BookCellIdentifier = "BookCell"
         static let ShowChaptersSegueIdentifier = ""
+        static let ShowScripturesSegueIndentifier = "ShowChapterContent"
     }
     
 
     var books = [Book]()
     var volume = ""
-    var volumeID = 1 {
-        didSet {
-            books = GeoDatabase.sharedGeoDatabase.booksForParentId(volumeID)
-        }
-    }
+    var volumeID = 1
     
     // Make this calculate what volume
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        updateUI()
+    }
+    
+    
+    
+    private func updateUI() {
         title = volume
+        books = GeoDatabase.sharedGeoDatabase.booksForParentId(volumeID)
     }
     
     // Table View data source
@@ -44,5 +47,11 @@ class BooksViewController : UITableViewController {
         
         cell.textLabel?.text = books[indexPath.row].fullName
         return cell
+    }
+    
+    // Table View delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: Storyboard.ShowScripturesSegueIndentifier, sender: self )
     }
 }
